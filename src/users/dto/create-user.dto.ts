@@ -8,6 +8,9 @@ export class CreateUserDto {
     @IsNotEmpty()
     name!: string;
 
+    @IsNotEmpty()
+    password!: string;
+
     @IsEnum(UserRole)
     role!: UserRole
 }
